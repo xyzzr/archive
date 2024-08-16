@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>52525252</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .link-button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            max-width: 500px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .link-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>!?!=%8250gingegw</h1>
+    <div id="link-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a');
+            const linkContainer = document.getElementById('link-container');
+
+            links.forEach(link => {
+                const button = document.createElement('a');
+                button.href = link.href;
+                button.textContent = link.textContent || link.href;
+                button.className = 'link-button';
+                linkContainer.appendChild(button);
+            });
+        });
+    </script>
+
+</body>
+</html>
